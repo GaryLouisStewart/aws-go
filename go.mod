@@ -1,4 +1,4 @@
-module aws_go
+module github.com/GaryLouisStewart/aws_go
 
 go 1.18
 
