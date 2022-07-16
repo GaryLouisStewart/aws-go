@@ -1,4 +1,4 @@
-module aws-go
+module aws_go
 
 go 1.18
 

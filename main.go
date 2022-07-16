@@ -1,4 +1,4 @@
-package aws-go
+package aws
 
 import (
 	"net"
