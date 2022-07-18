@@ -31,7 +31,7 @@ import (
 
 if err, != nil {
     fmt.Println("Got an error creating custom HTTP client:")
-    fmt.Prinln(err)
+    fmt.Println(err)
     return
 }
 
