@@ -8,6 +8,9 @@ import (
 	"golang.org/x/net/http2"
 )
 
+// code taken from
+// https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/custom-http.html
+
 type HTTPClientSettings struct {
 	Connect          time.Duration
 	ConnKeepAlive    time.Duration
