@@ -5,7 +5,7 @@ A Golang httpclient for interfacing with AWS.
 
 How to use this module
 
-Create a golang file with the following configuration
+Create a golang file with the following configuration in order to take advantage of the functions in this module.
 ```go
 
 package main
@@ -18,7 +18,7 @@ import (
 )
 
 
- httpClient, err := NewHTTPClientWithSettings(HTTPClientSettings{
+ httpClient, err := aws_go.NewHTTPClientWithSettings(aws_go.HTTPClientSettings{
     Connect:           5 * time.Second,
     ExpectContinue:    1 * time.Second,
     IdleConn:          60 * time.Second,
@@ -41,4 +41,6 @@ sess := session.Must(session.NewSession(&aws.Config{
 }))
 
 svc := iam.New(sess)
+
+// futher operations with the iam session or other aws sessions below.....
 ```
